@@ -44,7 +44,7 @@ mongodb)
   ;;
 *)
   echo "\e[1;31mInvalidate input provide the validate input\e[0m"
-  echo "\e[1;32mUsage: $0 | frontend | catalogue | mongodb\[0m"
+  echo "\e[1;32mUsage: $0 | frontend | catalogue | mongodb\e[0m"
   exit 2
   ;;
 esac
