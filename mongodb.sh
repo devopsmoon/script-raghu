@@ -43,8 +43,8 @@ mongodb)
   print1 "Finish......"
   ;;
 *)
-  echo -e "\e[1;31mInvalidate input provide the validate"
-  echo -e "\e[1;32mUsage: $0 | frontend | catalogue | mongodb"
+  echo -e "\e[1;31mInvalidate input provide the validate\e[0m"
+  echo -e "\e[1;32mUsage: $0 | frontend | catalogue | mongodb\e[0m"
   exit 2
   ;;
 esac
