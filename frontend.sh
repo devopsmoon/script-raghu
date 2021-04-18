@@ -29,7 +29,7 @@ status_check() {
     ;;
     esac
 }
-case $1 bin
+case $1 in
 frontend)
   print "Installing nginx server"
   print1 "Finish......"
