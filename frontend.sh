@@ -8,23 +8,23 @@ case $user_id in
 0)
 ;;
 *)
-echo "\e[1;31mYou should be root user to perform this script\e[0m"
+echo -e "\e[1;31mYou should be root user to perform this script\e[0m"
 exit 1
 ;;
 esac
 print() {
-echo "\e[1;32m***********************$1************************\e[0m"
+echo -e "\e[1;32m***********************$1************************\e[0m"
 }
 print1() {
-echo "\e[1;33m***********************$1*************************\e[0m"
+echo -e "\e[1;33m***********************$1*************************\e[0m"
 }
 status_check() {
 case $? in
 0)
-echo "\e[1;32mSUCCESS.....!\e[0m"
+echo -e "\e[1;32mSUCCESS.....!\e[0m"
 ;;
 *)
-echo "\e[1;31mFAILURE......!\e[0m"
+echo  -e "\e[1;31mFAILURE......!\e[0m"
 exit 3
 ;;
 esac
@@ -43,8 +43,8 @@ print "Installing mongodb server"
 print1 "Finish......."
 ;;
 *)
-echo "\e[1;31mInvalidate input provide the validate input\e[0m"
-echo "\e[1;32mUsage: $0 | frontend | catalogue | mongodb\e[0m"
+echo -e "\e[1;31mInvalidate input provide the validate input\e[0m"
+echo -e "\e[1;32mUsage: $0 | frontend | catalogue | mongodb\e[0m"
 exit 2
 ;;
 esac
