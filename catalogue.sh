@@ -42,7 +42,6 @@ catalogue)
   yum install nodejs make gcc-c++ -y
   status_check
   useradd -d /home/roboshop -m -s /bin/bash roboshop
-  su - roboshop
   mkdir -p /home/roboshop/catalogue
   cd /home/roboshop/catalogue
   print "Download source code"
@@ -51,7 +50,6 @@ catalogue)
   npm install
   sed -i 's/localhost/172.31.51.250/' /home/roboshop/catalogue/server.nodejs
   sed -i 's/MONGO_ENDPOINT/172.31.51.250/' /home/roboshop/catalogue/systemd.service
-  logout
   mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
   systemctl enable catalogue
   systemctl start catalogue
