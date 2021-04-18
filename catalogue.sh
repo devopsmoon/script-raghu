@@ -51,7 +51,7 @@ catalogue)
   npm install
   sed -i 's/localhost/172.31.51.250/' /home/roboshop/catalogue/server.nodejs
   sed -i 's/MONGO_ENDPOINT/172.31.51.250/' /home/roboshop/catalogue/systemd.service
-  exit
+  logout
   mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
   systemctl enable catalogue
   systemctl start catalogue
