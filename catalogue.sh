@@ -11,6 +11,7 @@ case $user_id in
   echo -e "\e[1;31mYou should be root user to perform this script\e[0m"
   exit 1
   ;;
+esac
 print() {
   echo -e "\e[1;32m************************$1**************************\e[0m"
 }
