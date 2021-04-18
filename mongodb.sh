@@ -3,7 +3,7 @@
 # Date: 19-04-2021
 # Description: This script will provide the out for mongodb
 # Modified Date: 19-04-2021
-user_id=(id -u)
+user_id=$(id -u)
 case $user_id in
 0)
   ;;
