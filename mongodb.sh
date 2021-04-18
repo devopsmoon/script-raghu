@@ -19,7 +19,7 @@ print1() {
   echo -e "\e[1;35m****************************$1*********************\e[0m"
 }
 status_check() {
-  case $?
+  case $? in
   0)
   echo -e "\e[1;32mSUCCESS.....!\e[0m"
   ;;
