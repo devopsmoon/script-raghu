@@ -8,7 +8,7 @@ case $user_id in
 0)
   ;;
 *)
-  echo "\e[1;31You should be root user to perform this script\e[0m"
+  echo "\e[1;31mYou should be root user to perform this script\e[0m"
   exit 1
   ;;
 esac
